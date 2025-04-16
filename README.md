@@ -2,7 +2,7 @@
 > This repository contains notes and source code provided during Dr. Mohammad Al Shaer's webinar entitled "The RAG Approach to Smarter Language Models".
 > The webinar was organized by Dr. Ihab Sbeity on Monday, April 14, 2025.
 
-## 1 - Introduction & General Overview
+## 1. Introduction & General Overview
 **RAG**, or Retrieval-Augmented Generation, is a hybrid AI architecture that combines the strengths of retrieval-based and generative models. 
 It enhances the capabilities of language models by integrating external knowledge sources, allowing them to generate more accurate and contextually relevant responses. 
 This architecture is particularly useful in scenarios where the model needs to access up-to-date information or specialized knowledge that may not be present in its training data (for example, in legal or medical document analysis, or in enterprise knowledge management).
