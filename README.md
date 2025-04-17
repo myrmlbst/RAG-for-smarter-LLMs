@@ -3,9 +3,7 @@
 > The webinar was organized by Dr. Ihab Sbeity on Monday, April 14, 2025.
 
 ## 1. Introduction & General Overview
-**RAG**, or Retrieval-Augmented Generation, is a hybrid AI architecture that combines the strengths of retrieval-based and generative models. 
-It enhances the capabilities of language models by integrating external knowledge sources, allowing them to generate more accurate and contextually relevant responses. 
-This architecture is particularly useful in scenarios where the model needs to access up-to-date information or specialized knowledge that may not be present in its training data (for example, in legal or medical document analysis, or in enterprise knowledge management).
+**RAG**, or Retrieval-Augmented Generation, is a hybrid AI architecture that combines the strengths of retrieval-based and generative models. It enhances the capabilities of language models by integrating external knowledge sources, allowing them to generate more accurate and contextually relevant responses. This architecture is particularly useful in scenarios where the model needs to access up-to-date information or specialized knowledge that may not be present in its training data (for example, in legal or medical document analysis, or in enterprise knowledge management).
 
 Such an architecture can also be used to address other major limitations of traditional language models, such as AI hallucination, by providing a mechanism for the model to verify its responses against reliable sources.
 
@@ -19,9 +17,7 @@ The RAG architecture consists of the following components:
 
 ## 3. Vector Embeddings and Vector Search
 **Text Embeddings:** 
-Vector embeddings are numerical representations of text that capture the semantic meaning of the text.
-Words and phrases are converted into high-dimensional vectors, allowing for efficient similarity comparisons:
-Those that have similar meanings will be positioned closer together.
+Vector embeddings are numerical representations of text that capture the semantic meaning of the text. Words and phrases are converted into high-dimensional vectors, allowing for efficient similarity comparisons: Those that have similar meanings will be positioned closer together.
 
 **Vector Search:** 
 Relationships/distances are defined by what we call 'similarity metrics', which are mathematical functions that measure the similarity between two vectors.
@@ -52,22 +48,16 @@ Relationships/distances are defined by what we call 'similarity metrics', which 
 RAG can be further enhanced by using the following advanced techniques: 
 
 ### 5.1. Query Transformation
-The first technique we can look at is **query transformation**, which involves modifying the input query to improve the retrieval process.
-We can do this via query expansion (enhancing queries with related terms) or query decomposition (breaking complex queries into simpler sub-queries).
+The first technique we can look at is **query transformation**, which involves modifying the input query to improve the retrieval process. We can do this via query expansion (enhancing queries with related terms) or query decomposition (breaking complex queries into simpler sub-queries).
 
 ### 5.2. Contextual Compression
-The second technique we can look at is **contextual compression**, which aims to get rid of irrelevant information (aka additional unnecessary workload) in the retrieved documents.
-This technique works by filtering irrelevant information from the retrieved documents and summarizing the document before the LLM begins processing information.
-These steps ensure that the LLM is only processing relevant information, which can significantly improve the performance of the RAG model.
+The second technique we can look at is **contextual compression**, which aims to get rid of irrelevant information (aka additional unnecessary workload) in the retrieved documents. This technique works by filtering irrelevant information from the retrieved documents and summarizing the document before the LLM begins processing information. These steps ensure that the LLM is only processing relevant information, which can significantly improve the performance of the RAG model.
 
 ### 5.3. Ensemble Retrieval
-The third technique is **ensemble retrieval**, which involves using multiple retrievers to gather information from different sources.
-This technique can be useful when the information is spread across multiple sources or when the retriever needs to access different types of data (e.g., structured and unstructured data).
-This technique can be used to improve the performance of the RAG model by ensuring that the LLM has access to a wider range of information.
-This can be done by using different retrievers for different types of data or by using multiple retrievers to gather information from different sources.
+The third technique is **ensemble retrieval**, which involves using multiple retrievers to gather information from different sources. This technique can be useful when the information is spread across multiple sources or when the retriever needs to access different types of data (e.g., structured and unstructured data). This technique can be used to improve the performance of the RAG model by ensuring that the LLM has access to a wider range of information. This can be done by using different retrievers for different types of data or by using multiple retrievers to gather information from different sources.
 
 ### 5.4 Self-RAG and Adaptive Retrieval
-[]
+The final technique, **self-RAG and adaptive retrieval**, works by allowing the language model to control the retrieval process during generation. Instead of retrieving documents before answering, the model first tries to answer the question and evaluates its own confidence or uncertainty. If it's unsure, it triggers a retrieval step (formulating a new query, pulling in relevant context, and continuing generation). This can happen iteratively, enabling the model to reason in steps, retrieve more as needed, and refine its answer on the fly. 
 
 ## 6. Evaluation Metrics
 Once the output is generated, we are able to evaluate the performance of the RAG model to ensure its efficiency and accuracy. Typically, we look at two things:
