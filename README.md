@@ -30,7 +30,23 @@ Relationships/distances are defined by what we call 'similarity metrics', which 
 - **Dot Product:** Calculates the product of vector elements
 
 ## 4. RAG Implementation
-[]
+### 4.1. Document Processing
+- Document loading from various sources (PDF, web, databases, APIs, etc.)
+- Text extraction and cleaning (removing headers/footers/HTML tags/formatting issues, normalizing whitespace, fixing encoding issues, etc.)
+- Chunking strategies (break the documents into chunks suitable for retrieval): 
+  - Fixed-size
+  - Semantic-based (using sentence boundaries or topic shifts)
+  - Recursive/Hierarchical (breaking down larger chunks into smaller ones)
+
+### 4.2. Retrieval Methods
+- Top-k retrieval: Store document embeddings in a vector database and retrieve the top ```k``` most similar
+- Hybrid search (lexical + semantic): Combine semantic similarity (vector-based) with lexical match (BM25)
+- Re-ranking for relevance: Compare query, chunk pairs, and re-rank based on relevance
+
+### 4.3. Prompting Strategies
+- Few-shot examples: Add a couple of QA pairs (if domain-specific) to the prompt so that the model can better understand how to answer
+- Instruction formatting: Use clear instructions to guide the model on how to respond
+- Source attribution templates: Include the source of the retrieved information in the output to improve trustworthiness and transparency (This is especially important in legal and medical use-cases)
 
 ## 5. Advanced RAG Techniques
 RAG can be further enhanced by using the following advanced techniques: 
