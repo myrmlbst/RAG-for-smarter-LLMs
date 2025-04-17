@@ -56,7 +56,7 @@ The second technique we can look at is **contextual compression**, which aims to
 ### 5.3. Ensemble Retrieval
 The third technique is **ensemble retrieval**, which involves using multiple retrievers to gather information from different sources. This technique can be useful when the information is spread across multiple sources or when the retriever needs to access different types of data (e.g., structured and unstructured data). This technique can be used to improve the performance of the RAG model by ensuring that the LLM has access to a wider range of information. This can be done by using different retrievers for different types of data or by using multiple retrievers to gather information from different sources.
 
-### 5.4 Self-RAG and Adaptive Retrieval
+### 5.4. Self-RAG and Adaptive Retrieval
 The final technique, **self-RAG and adaptive retrieval**, works by allowing the language model to control the retrieval process during generation. Instead of retrieving documents before answering, the model first tries to answer the question and evaluates its own confidence or uncertainty. If it's unsure, it triggers a retrieval step (formulating a new query, pulling in relevant context, and continuing generation). This can happen iteratively, enabling the model to reason in steps, retrieve more as needed, and refine its answer on the fly. 
 
 ## 6. Evaluation Metrics
