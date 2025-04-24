@@ -1,5 +1,5 @@
 # Retrieval-Augmented Generation for Smarter LLM's
-> This repository contains notes and source code provided during Dr. Mohammad Al Shaer's webinar entitled "The RAG Approach to Smarter Language Models".
+> This repository contains notes I took + the source code provided during Dr. Mohammad Al Shaer's webinar entitled "The RAG Approach to Smarter Language Models".
 > The webinar was organized by Dr. Ihab Sbeity on Monday, April 14, 2025.
 
 ## 1. Introduction & General Overview
