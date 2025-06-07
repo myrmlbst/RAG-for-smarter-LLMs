@@ -83,4 +83,4 @@ To view the source code, head into the ```@/src``` directory.
 This project is licensed under the GNU General Public License v3.0. See the [LICENSE](https://github.com/myrmlbst/RAG-for-smarter-LLMs/blob/main/LICENSE) file for details.
 
 ## 9. Credits
-Speaker: Mohammad Al Shaer, PhD, Software and Data Engineer
+**Speaker:** Mohammad Al Shaer, PhD, Software and Data Engineer
